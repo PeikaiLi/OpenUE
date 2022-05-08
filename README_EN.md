@@ -63,16 +63,21 @@ The code for different operations on different data sets is stored in `data`. Th
 
 ### Install
 
+#### prepare
+```bash
+mkdir indus_code
+cd indus_code/
+git clone https://github.com/PeikaiLi/OpenUE.git
+```
+vs_code
++ https://blog.csdn.net/weixin_39246554/article/details/123349699
++ https://blog.csdn.net/sqlquan/article/details/111918019
+
 #### Anaconda 
 
 ```
 conda create -n openue python=3.8
 conda activate openue
-
-mkdir indus_code
-cd indus_code/
-git clone https://github.com/PeikaiLi/OpenUE.git
-
 pip install -r requirements.txt
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia # depend on your GPU driver version
 pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
@@ -80,9 +85,6 @@ pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu
 python setup.py install
 ```
 
-# vs_code
-https://blog.csdn.net/weixin_39246554/article/details/123349699
-https://blog.csdn.net/sqlquan/article/details/111918019
 
 #### pip
 

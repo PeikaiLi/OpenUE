@@ -62,6 +62,16 @@
 
 ### 安装
 
+#### prepare
+```bash
+mkdir indus_code
+cd indus_code/
+git clone https://github.com/PeikaiLi/OpenUE.git
+```
+vs_code
++ https://blog.csdn.net/weixin_39246554/article/details/123349699
++ https://blog.csdn.net/sqlquan/article/details/111918019
+
 #### Anaconda 环境
 
 ```
