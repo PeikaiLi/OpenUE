@@ -74,13 +74,28 @@ vs_code
 
 #### Anaconda 环境
 
-```
+```bash
 conda create -n openue python=3.8
 conda activate openue
 pip install -r requirements.txt
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia # 视自己Nvidia驱动环境选择对应的cudatoolkit版本
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 python setup.py install
+
+pip install jupyter #  如果需要的话
 ```
+
+setup
+
+```
+python setup.py install 
+```
+
+❝该命令会将当前的Python应用安装到当前Python环境的”site-packages”目录下， 这样其他程序就可以像导入标准库一样导入该应用的代码了。
+
+此文件中，功能同pip install openue
+
+setup参考: https://zhuanlan.zhihu.com/p/276461821
 
 #### pip安装
 
@@ -89,6 +104,8 @@ pip install openue
 ```
 
 #### pip本地开发
+
+如果是开发阶段，可以用下面命令，该命令不会真正的安装包，**而是在系统环境中创建一个软链接指向包实际所在目录。 这样在修改包之后不用再安装就能生效，便于调试**。
 
 ```shell
 python setup.py develop
@@ -221,3 +238,6 @@ curl -v -X POST "http://localhost:3001/models?initial_workers=1&synchronous=fals
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+
+##### 结构
++ setup.p y定义了打包程序的一些相关信息
